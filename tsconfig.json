@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                     // Modern JavaScript target
+    "module": "ESNext",                    // Use ES module system
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Include necessary libraries
+    "jsx": "react-jsx",                    // Enable React JSX support
+    "esModuleInterop": true,               // Ensure compatibility with CommonJS modules
+    "allowSyntheticDefaultImports": true,  // Allow default imports for compatibility
+    "strict": true,                        // Enable all strict type checks
+    "moduleResolution": "node",            // Resolve modules using Node.js rules
+    "skipLibCheck": true,                  // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file naming
+    "baseUrl": "./",                       // Enable relative paths
+    "paths": {
+      "@components/*": ["src/components/*"] // Optional: Alias for components
+    }
+  },
+  "include": ["src" , "vite.config.ts"],                       // Include the source directory
+  "exclude": ["node_modules"],              // Exclude the node_modules directory
+  "files": [],                              // Empty for simplicity
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
