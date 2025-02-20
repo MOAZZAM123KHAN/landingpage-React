@@ -12,7 +12,8 @@
     "forceConsistentCasingInFileNames": true, // Ensure consistent file naming
     "baseUrl": "./",                       // Enable relative paths
     "paths": {
-      "@components/*": ["src/components/*"] // Optional: Alias for components
+      "@components/*": ["src/components/*"] ,// Optional: Alias for components
+       "@assets/*": ["src/assets/*"]    
     }
   },
   "include": ["src" , "vite.config.ts"],                       // Include the source directory

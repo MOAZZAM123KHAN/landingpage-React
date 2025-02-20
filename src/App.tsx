@@ -8,7 +8,8 @@ import Companies from './components/Companies';
 import ThingsWeDo from './components/ThingsWeDo';
 import Services from './components/Services';
 import Work from './components/Work';
-import Feedback from './components/Feedback';
+import PortfolioSection from './components/PortfolioSection';
+
 
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -19,11 +20,13 @@ function App() {
     <div className="min-h-screen">
       <Navbar />
       <Slider />
+
       <CreativeSection />
+      <PortfolioSection />
       <Companies />
       <ThingsWeDo />
       <Services />
-      <Feedback />
+      
       <Work />
       <Contact />
       <Footer />

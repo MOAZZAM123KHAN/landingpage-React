@@ -218,7 +218,6 @@
 
 
 
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -236,17 +235,20 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-black flex items-center justify-center">
+    <section id="contact" className="py-20 bg-[#0c0718] flex items-center justify-center">
       <div className="max-w-3xl w-full px-6 md:px-0">
+        {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">Get in Touch</h2>
-          <p className="text-xl text-gray-400">Let’s discuss your next project</p>
+          <h2 className="text-4xl font-bold text-[#ffffff] mb-4">Get in Touch</h2>
+          <p className="text-xl text-[#d4a7c6]">Let’s discuss your next project</p>
         </div>
+
+        {/* Contact Form */}
         <motion.form
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-white shadow-md rounded-lg p-8 space-y-6"
+          className="bg-[#1a1227] shadow-md rounded-lg p-8 space-y-6"
         >
           <div>
             <input
@@ -255,7 +257,7 @@ const Contact = () => {
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="w-full px-4 py-3 border border-[#d4a7c6] rounded-lg bg-transparent text-[#ffffff] placeholder-[#d4a7c6] focus:outline-none focus:ring-2 focus:ring-[#d4a7c6]"
             />
           </div>
           <div>
@@ -265,7 +267,7 @@ const Contact = () => {
               placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="w-full px-4 py-3 border border-[#d4a7c6] rounded-lg bg-transparent text-[#ffffff] placeholder-[#d4a7c6] focus:outline-none focus:ring-2 focus:ring-[#d4a7c6]"
             />
           </div>
           <div>
@@ -275,7 +277,7 @@ const Contact = () => {
               placeholder="State"
               value={formData.state}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="w-full px-4 py-3 border border-[#d4a7c6] rounded-lg bg-transparent text-[#ffffff] placeholder-[#d4a7c6] focus:outline-none focus:ring-2 focus:ring-[#d4a7c6]"
             />
           </div>
           <div>
@@ -285,7 +287,7 @@ const Contact = () => {
               placeholder="Project Type"
               value={formData.projectType}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="w-full px-4 py-3 border border-[#d4a7c6] rounded-lg bg-transparent text-[#ffffff] placeholder-[#d4a7c6] focus:outline-none focus:ring-2 focus:ring-[#d4a7c6]"
             />
           </div>
           <div>
@@ -295,12 +297,12 @@ const Contact = () => {
               rows={4}
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="w-full px-4 py-3 border border-[#d4a7c6] rounded-lg bg-transparent text-[#ffffff] placeholder-[#d4a7c6] focus:outline-none focus:ring-2 focus:ring-[#d4a7c6]"
             ></textarea>
           </div>
           <button
             type="submit"
-            className="w-full bg-rgb(128, 0, 128) text-white px-6 py-3 rounded-full font-medium hover:bg-black transition-colors"
+            className="w-full bg-[#d4a7c6] text-[#0c0718] px-6 py-3 rounded-full font-medium hover:bg-[#ffffff] hover:text-[#0c0718] transition-colors"
           >
             Send Message
           </button>
@@ -311,3 +313,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

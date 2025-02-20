@@ -38,7 +38,7 @@ interface SliderControlsProps {
   autoScrollInterval?: number; // Optional prop for interval duration
 }
 
-const SliderControls: React.FC<SliderControlsProps> = ({ onPrevClick, onNextClick, autoScrollInterval = 3000 }) => {
+const SliderControls: React.FC<SliderControlsProps> = ({ onPrevClick, onNextClick, autoScrollInterval = 5000 }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       onNextClick();

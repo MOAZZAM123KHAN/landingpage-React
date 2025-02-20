@@ -15,7 +15,7 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div id="home" className="relative h-screen overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
@@ -29,7 +29,7 @@ const Slider = () => {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${sliderData[currentSlide].image})` }}
           >
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-#0c0718" />
           </div>
           <div className="relative h-full flex items-center">
             <div className="container mx-auto px-4">
@@ -59,7 +59,7 @@ const Slider = () => {
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-2 h-2 rounded-full transition-colors ${
-              index === currentSlide ? 'bg-black' : 'bg-white/50'
+              index === currentSlide ? 'bg-blue-600' : 'bg-white/50'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
